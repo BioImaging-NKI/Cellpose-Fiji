@@ -7,7 +7,7 @@ Input: 2D image or 2D timelapse.
 Output: (timelapse) labelmap, ROIs
 
 Requirements:
-- A working Cellpose Python environment.
+- A working [Cellpose Python environment](https://github.com/MouseLand/cellpose#local-installation).
 - Fiji Update Site: PTBIOP
 - Follow the instructions on https://github.com/BIOP/ijl-utilities-wrappers
 
