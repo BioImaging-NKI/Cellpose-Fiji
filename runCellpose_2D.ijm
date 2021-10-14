@@ -1,6 +1,9 @@
 /*  Macro to run Cellpose on a 2D image or active (rectangular) selection and display the segmentation as colored overlay.
- *  Labels are also added to the ROI Manager. Works on 2D timelapses as well.
- *
+ *  Labels are also added to the ROI Manager.
+ *  
+ *  Input: 2D image or 2D time-lapse image.
+ *  Output: (timelapse) Labelmap and ROIs
+ *  
  *  Requirements:
  *  - A working Cellpose Python environment.
  *  - Fiji Update Site: PTBIOP
