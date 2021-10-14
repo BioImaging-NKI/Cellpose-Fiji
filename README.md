@@ -1,6 +1,8 @@
 # cellpose-FIJI
-ImageJ1 macro to run Cellpose on a 2D image or active (rectangular) selection and display the segmentation as colored overlay.
-Labels are also added to the ROI Manager. Works on 2D timelapses as well.
+ImageJ1 macro to run Cellpose on an image or active (rectangular) selection and display the segmentation as colored overlay.
+
+Input: 2D image or 2D time-lapse.
+Output: (timelapse) Labelmap and ROIs
 
 Requirements:
 - A working Cellpose Python environment.
