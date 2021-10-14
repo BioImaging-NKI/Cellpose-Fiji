@@ -11,5 +11,6 @@ Note that the hard work has been done by others, namely the Cellpose authors and
 
 Please cite the [Cellpose article](https://www.nature.com/articles/s41592-020-01018-x) if you use this macro in a publication.
 
-![image](https://user-images.githubusercontent.com/33119248/137391360-8aa0e65d-d48b-4e91-b8af-86f7f2ae6909.png)
+N.B. In this macro the 'cyto2' model currently does not work on 2-channel images (cells and nuclei). This should be fixed very soon.
 
+![image](https://user-images.githubusercontent.com/33119248/137392416-88a7b8cf-25ee-4116-8b54-b582459e9443.png)
