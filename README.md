@@ -9,7 +9,7 @@ Output: (timelapse) labelmap, ROIs
 Requirements:
 - A working [Cellpose Python environment](https://github.com/MouseLand/cellpose#local-installation).
 - Fiji Update Site: PTBIOP
-- Follow the instructions on https://github.com/BIOP/ijl-utilities-wrappers
+- Follow [this part](https://github.com/BIOP/ijl-utilities-wrappers#-enable-conda-command-outside-conda-prompt-) of the instructions on https://github.com/BIOP/ijl-utilities-wrappers
 
 Note that the hard work has been done by others, namely the Cellpose authors and the BIOP at EPFL.
 
