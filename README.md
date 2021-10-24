@@ -1,4 +1,5 @@
 # cellpose-FIJI
+ImageJ macros to run Cellpose in Fiji and to match nuclei with cell body labelmaps.
 ## runCellpose_2D.ijm
 ImageJ1 macro to run Cellpose on an image or active (rectangular) selection and display the segmentation as colored overlay.
 Labels are also added to the ROI Manager.
