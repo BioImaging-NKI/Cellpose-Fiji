@@ -9,7 +9,8 @@
  *  - Fiji Update Site: PTBIOP
  *  - Follow the instructions on https://github.com/BIOP/ijl-utilities-wrappers
  *  
- *  Author: Bram van den Broek, The Netherlands Cancer Institute.
+ *  Author: Bram van den Broek, The Netherlands Cancer Institute. (b.vd.broek@nki.nl)
+ *  
  *  Note that the hard work has been done by others, namely the Cellpose authors and the BIOP at EPFL.
  *  
  *  Please cite the Cellpose article if you use this macro in a publication:
