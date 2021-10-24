@@ -1,5 +1,5 @@
-/*  Macro to match the label numbers of a nuclei labelmap with a cell body labelmap.
- *  Cells can have multiple nuclei.
+/*  Macro to match the label values of a nuclei labelmap with a cell body labelmap.
+ *  Cells can have multiple nuclei. Nuclei without a cell body are removed.
  *  
  *  Input: Two 2D labelmaps
  *  Output: - labelmap with nuclei labels reassigned to match the cells
