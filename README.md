@@ -1,4 +1,5 @@
 # cellpose-FIJI
+## runCellpose_2D.ijm
 ImageJ1 macro to run Cellpose on an image or active (rectangular) selection and display the segmentation as colored overlay.
 Labels are also added to the ROI Manager.
 
@@ -18,3 +19,28 @@ Please cite the [Cellpose article](https://www.nature.com/articles/s41592-020-01
 N.B. In this macro the 'cyto2' model currently does not work on 2-channel images (cells and nuclei). This should be fixed very soon.
 
 ![image](https://user-images.githubusercontent.com/33119248/137392416-88a7b8cf-25ee-4116-8b54-b582459e9443.png)
+
+## match_cells_and_nuclei_labelmaps.ijm
+Macro to match the label values of a nuclei labelmap with a cell body labelmap.
+Cells can have multiple nuclei. Nuclei without a cell body are removed.
+
+Input: Two 2D labelmaps
+Output: - labelmap with nuclei labels reassigned to match the cells
+        - labelmap of the cytoplasm (cell body minus nuclei)
+        - labelmap of cells without an assigned nucleus (empty cells)
+        - labelmap of cells without an assigned nucleus minus any other nuclei that overlap, but are assigned to another cell
+        - (TO DO) labelmap of nuclei without a cell body
+
+Requirements:
+- Fiji Update sites: CLIJ and CLIJ2
+
+Please cite the [CLIJ](https://www.nature.com/articles/s41592-019-0650-1) article if you use this macro in a publication.
+
+Input label images: nuclei and cells (label values do not match):
+
+![image](https://user-images.githubusercontent.com/33119248/138616840-4ec7daf7-b312-4b33-9da2-3575ce8c05e3.png)
+
+Output label images: reassigned nuclei, cytoplasm, empty cells with nuclei overlap removed:
+
+![image](https://user-images.githubusercontent.com/33119248/138616883-3c390fcc-e729-4942-b3fc-4bc1ed8fbd4c.png)
+
