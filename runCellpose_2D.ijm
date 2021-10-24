@@ -41,6 +41,7 @@ if(!endsWith(segmentation, "-cellpose")) exit("Cellpose did not return a labelma
 rename(segmentation + "__" + cellposeModel + "_diam_" + cellposeDiameter + "_flowTH_" + cellposeFlowThreshold + "_cellProb_" + cellposeProbability);
 labelmap = getTitle;
 run("glasbey_on_dark");
+resetMinAndMax();
 roiManager("reset");
 setBatchMode(true);
 selectWindow(labelmap);
