@@ -26,11 +26,12 @@ Macro to match the label values of a nuclei labelmap with a cell body labelmap.
 Cells can have multiple nuclei. Nuclei without a cell body are removed.
 
 Input: Two 2D labelmaps
-Output: - labelmap with nuclei labels reassigned to match the cells
-        - labelmap of the cytoplasm (cell body minus nuclei)
-        - labelmap of cells without an assigned nucleus (empty cells)
-        - labelmap of cells without an assigned nucleus minus any other nuclei that overlap, but are assigned to another cell
-        - (TO DO) labelmap of nuclei without a cell body
+Output:
+- labelmap with nuclei labels reassigned to match the cells
+- labelmap of the cytoplasm (cell body minus nuclei)
+- labelmap of cells without an assigned nucleus (empty cells)
+- labelmap of cells without an assigned nucleus minus any other nuclei that overlap, but are assigned to another cell
+- (TO DO) labelmap of nuclei without a cell body
 
 Requirements:
 - Fiji Update sites: CLIJ and CLIJ2
