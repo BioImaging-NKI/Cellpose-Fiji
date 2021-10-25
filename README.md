@@ -1,4 +1,4 @@
-# cellpose-FIJI
+# Cellpose-Fiji
 ImageJ macros to run Cellpose in Fiji and to match label values in independent labelmaps of nuclei and cell bodies.
 
 ## runCellpose_2D.ijm
