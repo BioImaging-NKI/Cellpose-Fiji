@@ -40,7 +40,7 @@ Requirements:
 
 Please cite the [CLIJ](https://www.nature.com/articles/s41592-019-0650-1) article if you use this macro in a publication.
 
-Input label images: nuclei and cells (label values do not match):
+Input label images: nuclei and cells (label values do not match - colors are different):
 
 ![image](https://user-images.githubusercontent.com/33119248/138616840-4ec7daf7-b312-4b33-9da2-3575ce8c05e3.png)
 
