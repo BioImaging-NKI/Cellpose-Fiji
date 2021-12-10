@@ -54,6 +54,7 @@ selectWindow(labelmap_reassigned_nuclei);
 resetMinAndMax();
 run("Glasbey on dark");
 getRawStatistics(nPixels, mean, min, max, std, histogram);	//histogram size is equal to the nucleus with largest label that overlaps with a cell.
+
 empty_cells = Array.getSequence(nr_cells);
 for (i = 0; i < nr_cells; i++) {
 	if(i<=max) {
@@ -65,6 +66,7 @@ for (i = 0; i < nr_cells; i++) {
 labelmap_cytoplasm = "labelmap_cytoplasm";
 Ext.CLIJ2_subtractImages(labelmap_cells, labelmap_reassigned_nuclei, labelmap_cytoplasm);
 Ext.CLIJ2_pull(labelmap_cytoplasm);
+changeValues(-1e9, 0, 0);
 run("Glasbey on dark");
 setMinAndMax(0, nr_cells);	//Set LUT so that the colors match with the other label maps. 
 
@@ -72,6 +74,7 @@ Ext.CLIJ2_pushArray(empty_cells_image, empty_cells, nr_cells, 1, 1);
 labelmap_empty_cells = "labelmap_empty_cells";
 Ext.CLIJ2_replaceIntensities(labelmap_cells, empty_cells_image, labelmap_empty_cells);
 Ext.CLIJ2_pull(labelmap_empty_cells);
+changeValues(-1e9, 0, 0);
 run("Glasbey on dark");
 setMinAndMax(0, nr_cells);	//Set LUT so that the colors match with the other label maps. 
 
@@ -82,7 +85,7 @@ Ext.CLIJ2_binaryIntersection(labelmap_reassigned_nuclei, labelmap_empty_cells, m
 Ext.CLIJ2_binaryNot(mask, mask_inverted);
 Ext.CLIJ2_mask(labelmap_empty_cells, mask_inverted, labelmap_empty_cells_masked);
 Ext.CLIJ2_pull(labelmap_empty_cells_masked);
-resetMinAndMax();
+changeValues(-1e9, 0, 0);
 run("Glasbey on dark");
 setMinAndMax(0, nr_cells);	//Set LUT so that the colors match with the other label maps. 
 
