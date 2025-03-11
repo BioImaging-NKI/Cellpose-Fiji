@@ -1,6 +1,8 @@
 # Cellpose-Fiji
 ImageJ1 macros to run Cellpose within Fiji (using the BIOP-EPFL plugin) and to match label values in independent labelmaps of nuclei and cell bodies.
 
+_**NOTE**: These macros will not work with the latest version of the BIOP Cellpose Wrapper! In the comings weeks we will (hopefully find the time to) update this repository._
+
 ## runCellpose_2D.ijm
 ImageJ1 macro to run Cellpose on an image or active (rectangular) selection and display the segmentation as colored overlay.
 Labels are also added to the ROI Manager.
